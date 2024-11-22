@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Settings xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/2011/01/fabric">
+  <Section Name="Common">
+    <Parameter Name="StampName" Value="" MustOverride="true" />
+    <Parameter Name="ApplicationTypeVersion" Value="" MustOverride="true" />
+    <Parameter Name="Environment" Value="" MustOverride="true" />
+    <Parameter Name="ScaleUnit" Value="" MustOverride="true"/>
+    <!-- Key vault parameters -->
+    <Parameter Name="KeyVaultUseMsi" Value="" MustOverride="true" />
+    <Parameter Name="KeyVaultAadAppId" Value="" MustOverride="true" />
+    <Parameter Name="KeyVaultAadAppCertSubjectName" Value="" MustOverride="true" />
+    <Parameter Name="SSLCertificateSubjectName" Value="" MustOverride="true" />
+    <Parameter Name="OtherStampUri" Value="" MustOverride="true" />
+    <Parameter Name="AdminStorageAccountName" Value="" MustOverride="true" />
+    <Parameter Name="ScaleUnitStorageAccountName" Value="" MustOverride="true" />
+    <Parameter Name="WriteQueuesStorageAccountNames" Value="" MustOverride="true" />
+    <Parameter Name="ShredderStorageAccountNames" Value="" MustOverride="true" />
+    <Parameter Name="WriteQueuesAccessPermissionMapping" Value="" MustOverride="true" />
+    <Parameter Name="WriteQueueNameSuffixAccessOverride" Value="" MustOverride="true" />
+    <Parameter Name="AdminStorageAccountConcurrencyLimit" Value="" MustOverride="true" />
+    <Parameter Name="TenantRegistrationCacheRefreshInterval" Value="" MustOverride="true" />
+    <Parameter Name="ChaosConfig" Value="" MustOverride="true" />
+    <Parameter Name="IsChaosEnabled" Value="" MustOverride="true" />
+    <Parameter Name="NoRetryResourceConfig" Value="" MustOverride="true" />
+    <Parameter Name="NoPoisonResourceConfig" Value="" MustOverride="true" />
+    <Parameter Name="ReservedTenantIds" Value="" MustOverride="true" />
+    <Parameter Name="ResourceTypeApiVersionHardOverrides" Value="" MustOverride="true"/>
+    <Parameter Name="ResourceTypeApiVersionSoftOverrides" Value="" MustOverride="true"/>
+    <Parameter Name="ArmResourceProviderOperationsEndpointCert" Value="" MustOverride="true"/>
+    <Parameter Name="OverrideDuplicateNotifications" Value="" MustOverride="true"/>
+    <Parameter Name="CreatedStatusCodeDelaysInMinutes" Value="" MustOverride="true"/>
+    <Parameter Name="AcceptedStatusCodeDelaysInMinutes" Value="" MustOverride="true"/>
+    <Parameter Name="AcceptedStatusCodeDelaysForActionsInMinutes" Value="" MustOverride="true"/>
+    <Parameter Name="DeletedStatusCodeDelaysInMinutes" Value="" MustOverride="true"/>
+    <Parameter Name="RequeueAttemptTimeout" Value="" MustOverride="true"/>
+    <Parameter Name="PoisonAttemptTimeout" Value="" MustOverride="true"/>
+    <Parameter Name="TypeToDatasetOverrideMap" Value="" MustOverride="true"/>
+  </Section>
+  <Section Name="Monitoring">
+    <Parameter Name="MdmEnvironment" Value="" MustOverride="true" />
+    <Parameter Name="IfxDefaultAccount" Value="" MustOverride="true" />
+    <Parameter Name="IfxDefaultNamespace" Value="" MustOverride="true" />
+    <Parameter Name="GCSConnectionCert" Value="" MustOverride="true" />
+    <Parameter Name="UnskippableStartedEventsForLogs" Value="" MustOverride="true" />
+    <Parameter Name="IsActivityStartedDisabled" Value="" MustOverride="true" />
+    <Parameter Name="ShredderOptedOutActivities" Value="" MustOverride="true" />
+    <Parameter Name="EnableOpenTelemetryAuditLogging" Value="" MustOverride="true" />
+  </Section> 
+  <Section Name="CosmosDbAccess">
+    <Parameter Name="GlobalCosmosDbEndpoint" Value="" MustOverride="true" />
+    <Parameter Name="GlobalCosmosDbDatabaseId" Value="" MustOverride="true" />
+    <Parameter Name="GlobalCosmosDbResourceId" Value="" MustOverride="true" />
+    <Parameter Name="GlobalCosmosDbApplicationRegion" Value="" MustOverride="true" />
+    <Parameter Name="AdminCosmosDbEndpoint" Value="" MustOverride="true" />
+    <Parameter Name="AdminCosmosDbDatabaseId" Value="" MustOverride="true" />
+    <Parameter Name="AdminCosmosDbResourceId" Value="" MustOverride="true" />
+    <Parameter Name="ScaleUnitCosmosDbEndpoint" Value="" MustOverride="true" />
+    <Parameter Name="ScaleUnitCosmosDbDatabaseId" Value="" MustOverride="true" />
+    <Parameter Name="ScaleUnitCosmosDbResourceId" Value="" MustOverride="true" />
+    <Parameter Name="RbacCosmosDbEndpoint" Value="" MustOverride="true" />
+    <Parameter Name="RbacCosmosDbDatabaseId" Value="" MustOverride="true" />
+    <Parameter Name="RbacCosmosDbResourceId" Value="" MustOverride="true" />
+    <Parameter Name="RbacCosmosDbApplicationRegion" Value="" MustOverride="true" />
+    <Parameter Name="RbacCosmosDbArmId" Value="" MustOverride="true" />
+    <Parameter Name="CosmosDbRegistrationCollectionId" Value="" MustOverride="true" />
+    <Parameter Name="CosmosProviderMetadataCollectionId" Value="" MustOverride="true" />
+    <Parameter Name="CosmosDbReplayMessageCollectionId" Value="" MustOverride="true" />
+    <Parameter Name="CosmosDbTenantRegistrationCollectionId" Value="" MustOverride="true" />
+    <Parameter Name="CosmosDbConfigCollectionId" Value="" MustOverride="true" />
+    <Parameter Name="CosmosDbTransformationRulesCollectionId" Value="" MustOverride="true" />
+    <Parameter Name="CosmosDbLavaCollectionId" Value="" MustOverride="true" />
+    <Parameter Name="CosmosDbDatasetConfigCollectionId" Value="" MustOverride="true" />
+    <Parameter Name="CosmosDbResourceValidationRuleCollectionId" Value="" MustOverride="true" />
+    <Parameter Name="EnabledTenantIdPrefixesForZeroCapSubscriptions" Value="" MustOverride="true" />
+    <Parameter Name="EnableFetchOfAllTenantsForZeroCapSubscriptions" Value="" MustOverride="true" />
+    <Parameter Name="LocalCosmosDbAuthorizationKey" Value="" MustOverride="true" />
+    </Section>
+  <Section Name="Deployment">
+    <Parameter Name="DeploymentState" Value="" MustOverride="true" />
+  </Section>
+  <Section Name="ResourceNotifications">
+    <Parameter Name="WriteServiceBusNameList" Value="" MustOverride="true" />
+    <Parameter Name="WriteQueueCountPerQueueTypeInServiceBus" Value="" MustOverride="true" />
+    <Parameter Name="ServiceBusGetTimeout" Value="" MustOverride="true"/>
+    <Parameter Name="ServiceBusGeneralTimeout" Value="" MustOverride="true"/>
+    <Parameter Name="ServiceBusSdkPrefetchCount" Value="" MustOverride="true"/>
+    <Parameter Name="ServiceBusLenCachingInSeconds" Value="" MustOverride="true"/>
+    <Parameter Name="ServiceBusShallowSdkPrefetchMode" Value="" MustOverride="true"/>
+    <Parameter Name="ServiceBusQueueConsumersNotRetriableErrors" Value="" MustOverride="true"/>
+    <Parameter Name="ServiceBusReturnedMessagesCounterLookBackInMinutes" Value="" MustOverride="true"/>
+    <Parameter Name="ServiceBusReturnedMessagesCounterPercentage" Value="" MustOverride="true"/>
+    <Parameter Name="ServiceBusClientPrefetchEnabled" Value="" MustOverride="true"/>
+    <Parameter Name="WriteServiceBusConfigList" Value="" MustOverride="true"/>
+    <Parameter Name="SnapshotNotificationRetryQueue" Value="" MustOverride="true"/>
+  </Section>
+  <Section Name="Process">
+    <Parameter Name="MinWorkerThreads" Value="" MustOverride="true" />
+    <Parameter Name="MinCompletionPortThreads" Value="" MustOverride="true" />
+    <Parameter Name="MaxWorkerThreads" Value="" MustOverride="true" />
+    <Parameter Name="MaxCompletionPortThreads" Value="" MustOverride="true" />
+  </Section>
+  <Section Name="ArmAccess">
+    <Parameter Name="ArmEndpoint" Value="" MustOverride="true" />
+    <Parameter Name="ArmAdminEndpoint" Value="" MustOverride="true" />
+    <Parameter Name="ArmEndpointRegions" Value="" MustOverride="true" />
+    <Parameter Name="ArmDisabledEndpointRegions" Value="" MustOverride="true" />
+    <Parameter Name="ArmRegionalEndpointBase" Value="" MustOverride="true" />
+    <Parameter Name="ArmAdminRegionalEndpointBase" Value="" MustOverride="true" />
+    <Parameter Name="ArmEndpointSimulated" Value="" MustOverride="true" />
+    <Parameter Name="ArmRequestRateLimitPerScope" Value="" MustOverride="true" />
+    <Parameter Name="ArtAadAppIdForArm" Value="" MustOverride="true" />
+    <Parameter Name="ArtAadAppCertificateForArm" Value="" MustOverride="true" />
+    <Parameter Name="ArmDefaultRegion" Value="" MustOverride="true"/>
+    <Parameter Name="ArmResourceClientIsMaskCmkQueryParamEnabled" Value="" MustOverride="true" />
+    <Parameter Name="ArmResourceClientCmkQueryParamExcludedTypes" Value="" MustOverride="true" />
+  </Section>
+  <Section Name="Shredder">
+    <Parameter Name="ShredderServiceBigFileQueuePollingPeriod" Value="" MustOverride="true" />
+    <Parameter Name="ShredderBigFileQueue" Value="" MustOverride="true" />
+    <Parameter Name="ShredderBigFileFailureQueue" Value="" MustOverride="true" />
+    <Parameter Name="ShredderBigFileJobManagerThreadPoolThreadLimit" Value="" MustOverride="true" />
+    <Parameter Name="ShredderBigFileJobManagerMaxQueueMessageDequeueCount" Value="" MustOverride="true" />
+    <Parameter Name="ShredderBigFileJobManagerQueueMessageMaxVisibilityTimeout" Value="" MustOverride="true" />
+    <Parameter Name="ShredderBigFileJobManagerDeltaQueueMessageVisibilityTimeout" Value="" MustOverride="true" />
+    <Parameter Name="ShredderBigFileBlockCopyQueue" Value="" MustOverride="true" />
+    <Parameter Name="ShredderBigFileBlockCopyFailureQueue" Value="" MustOverride="true" />
+    <Parameter Name="ShredderBigFileBlockCopyQueuePollingPeriod" Value="" MustOverride="true" />
+    <Parameter Name="ShredderBigFileBlockCopyQueueMessageDaysToLive" Value="" MustOverride="true" />
+    <Parameter Name="ShredderBigFileBlockCopyJobManagerThreadPoolThreadLimit" Value="" MustOverride="true" />
+    <Parameter Name="ShredderBigFileBlockCopyJobManagerMaxQueueMessageDequeueCount" Value="" MustOverride="true" />
+    <Parameter Name="ShredderBigFileBlockCopyJobManagerQueueMessageMaxVisibilityTimeout" Value="" MustOverride="true" />
+    <Parameter Name="ShredderBigFileBlockCopyJobManagerDeltaQueueMessageVisibilityTimeout" Value="" MustOverride="true" />
+    <Parameter Name="ShredderBigFileAwaitCopyQueue" Value="" MustOverride="true" />
+    <Parameter Name="ShredderBigFileAwaitCopyFailureQueue" Value="" MustOverride="true" />
+    <Parameter Name="ShredderBigFileAwaitCopyQueuePollingPeriod" Value="" MustOverride="true" />
+    <Parameter Name="ShredderBigFileAwaitCopyQueueMessageDaysToLive" Value="" MustOverride="true" />
+    <Parameter Name="ShredderBigFileAwaitCopyJobManagerThreadPoolThreadLimit" Value="" MustOverride="true" />
+    <Parameter Name="ShredderBigFileAwaitCopyJobManagerMaxQueueMessageDequeueCount" Value="" MustOverride="true" />
+    <Parameter Name="ShredderBigFileAwaitCopyJobManagerQueueMessageMaxVisibilityTimeout" Value="" MustOverride="true" />
+    <Parameter Name="ShredderBigFileAwaitCopyJobManagerDeltaQueueMessageVisibilityTimeout" Value="" MustOverride="true" />
+    <Parameter Name="ShredderServiceStorageAccountConnectionString" Value="" MustOverride="true" />
+    <Parameter Name="QueueMessageVisibilityTimeout" Value="" MustOverride="true" />
+    <Parameter Name="QueueMessageVisibilityCheckAhead" Value="" MustOverride="true" />
+    <Parameter Name="ShredderServiceProcessingQueuePollingPeriod" Value="" MustOverride="true" />
+    <Parameter Name="ShredderProcessingQueueMessageDaysToLive" Value="" MustOverride="true" />
+    <Parameter Name="ShredderProcessingQueue" Value="" MustOverride="true" />
+    <Parameter Name="ShredderProcessingFailureQueue" Value="" MustOverride="true" />
+    <Parameter Name="ShredderProcessingJobManagerThreadPoolThreadLimit" Value="" MustOverride="true" />
+    <Parameter Name="ShredderProcessingJobManagerMaxQueueMessageDequeueCount" Value="" MustOverride="true" />
+    <Parameter Name="ShredderProcessingJobManagerQueueMessageMaxVisibilityTimeout" Value="" MustOverride="true" />
+    <Parameter Name="ShredderProcessingJobManagerDeltaQueueMessageVisibilityTimeout" Value="" MustOverride="true" />
+    <Parameter Name="SnapshotResourceTypeToSnapshotName" Value="" MustOverride="true" />
+    <Parameter Name="SnapshotResourceTypeToKustoPartitions" Value="" MustOverride="true" />
+    <Parameter Name="SnapshotResourceTypeToFilePartitionSizeInMB" Value="" MustOverride="true" />
+    <Parameter Name="SnapshotResourceTypeToNotificationResourceType" Value="" MustOverride="true" />
+    <Parameter Name="SnapshotResourceTypeToScopeId" Value="" MustOverride="true" />
+    <Parameter Name="SnapshotResourceTypeToRoutingType" Value="" MustOverride="true" />
+    <Parameter Name="SnapshotResourceTypeToShredderBigFileJobEnabled" Value="" MustOverride="true" />
+    <Parameter Name="SnapshotResourceTypeToShredderBigProcessingJobEnabled" Value="" MustOverride="true" />
+    <Parameter Name="SnapshotResourceTypeToAllowedTenantIds" Value="" MustOverride="true" />
+    <Parameter Name="SnapshotResourceTypeToBlocksToCopyPerMessage" Value="" MustOverride="true" />
+    <Parameter Name="SnapshotResourceTypeToQueueBatchLimit" Value="" MustOverride="true" />
+    <Parameter Name="SnapshotResourceTypeToBlockCopyTimeout" Value="" MustOverride="true" />
+    <Parameter Name="SnapshotResourceTypeToCopyTime" Value="" MustOverride="true" />
+    <Parameter Name="SnapshotResourceTypeToProcessingTime" Value="" MustOverride="true" />
+    <Parameter Name="SnapshotResourceTypeToShredderStorageAccount" Value="" MustOverride="true" />
+    <Parameter Name="SnapshotResourceTypeToARNSchemaVersion" Value="" MustOverride="true" />
+    <Parameter Name="GenerateBlobForPartitionFileMetadata" Value="" MustOverride="true" />
+  </Section>
+  <Section Name="RegistrationInfoClient">
+    <Parameter Name="RegistrationInfoServiceRegionalBaseUrl" Value="" MustOverride="true" />
+    <Parameter Name="DstsClientId" Value="" MustOverride="true" />
+    <Parameter Name="RegistrationInfoClientJWTCert" Value="" MustOverride="true" />
+    <Parameter Name="EnableRegistrationInfoServiceAPIClient" Value="" MustOverride="true" />
+    <Parameter Name="EnableRegistrationInfoApiPhantomCalls" Value="" MustOverride="true" />
+    <Parameter Name="RegistrationInfoApiPhantomValidationPercentage" Value="" MustOverride="true" />
+    <Parameter Name="RegistrationInfoApiPhantomSubscriptionsPrefixList" Value="" MustOverride="true" />
+    <Parameter Name="RegistrationInfoApiEnabledForSubscriptionsPrefixList" Value="" MustOverride="true" />
+  </Section>
+</Settings>

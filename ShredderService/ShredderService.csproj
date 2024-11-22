@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net7.0</TargetFramework>
+    <RootNamespace>Microsoft.WindowsAzure.Governance.ResourcesCache.ShredderService</RootNamespace>
+    <AssemblyName>Microsoft.WindowsAzure.Governance.ResourcesCache.ShredderService</AssemblyName>
+    <Platforms>x64</Platforms>
+    <ServerGarbageCollection>True</ServerGarbageCollection>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Libraries\Common\JobManagement\JobManagement.csproj" />
+    <ProjectReference Include="..\..\Libraries\DataAccess\AzureResourceManagement\AzureResourceManagement.csproj" />
+    <ProjectReference Include="..\..\Libraries\SubComponents\RBAC\PasManagement\PasManagement.csproj" />
+    <ProjectReference Include="..\..\Libraries\SubComponents\Shared\SharedServiceImplementations\SharedServiceImplementations.csproj" />
+    <ProjectReference Include="..\..\Libraries\SubComponents\TypeSpace\TypeSpace.Contracts\TypeSpace.Contracts.csproj" />
+    <ProjectReference Include="..\..\Libraries\SubComponents\WritePath\Notifications\Notifications.Shared\Notifications.Shared.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.ServiceFabric.AspNetCore.Kestrel" />
+  </ItemGroup>
+  <Import Project="$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory), Governance.props))\Governance.props" />
+</Project>

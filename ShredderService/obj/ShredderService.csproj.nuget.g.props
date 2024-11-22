@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <RestoreSuccess Condition=" '$(RestoreSuccess)' == '' ">True</RestoreSuccess>
+    <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
+    <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>
+    <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">$(UserProfile)\.nuget\packages\</NuGetPackageRoot>
+    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\mattyang\.nuget\packages\;C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages</NuGetPackageFolders>
+    <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
+    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">6.11.1</NuGetToolVersion>
+  </PropertyGroup>
+  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <SourceRoot Include="C:\Users\mattyang\.nuget\packages\" />
+    <SourceRoot Include="C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages\" />
+  </ItemGroup>
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgMicrosoft_VisualStudio_SlnGen Condition=" '$(PkgMicrosoft_VisualStudio_SlnGen)' == '' ">C:\Users\mattyang\.nuget\packages\microsoft.visualstudio.slngen\10.0.0</PkgMicrosoft_VisualStudio_SlnGen>
+    <PkgMicrosoft_Build_Telemetry Condition=" '$(PkgMicrosoft_Build_Telemetry)' == '' ">C:\Users\mattyang\.nuget\packages\microsoft.build.telemetry\1.0.17</PkgMicrosoft_Build_Telemetry>
+    <PkgBond_CSharp Condition=" '$(PkgBond_CSharp)' == '' ">C:\Users\mattyang\.nuget\packages\bond.csharp\11.0.0</PkgBond_CSharp>
+    <PkgGrpc_Tools Condition=" '$(PkgGrpc_Tools)' == '' ">C:\Users\mattyang\.nuget\packages\grpc.tools\2.57.0</PkgGrpc_Tools>
+  </PropertyGroup>
+</Project>
